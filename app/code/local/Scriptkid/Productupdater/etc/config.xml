@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Scriptkid_Priceupdater>
+            <version>0.4.2</version>
+        </Scriptkid_Priceupdater>
+    </modules>
+
+    <global>
+        <models>
+            <priceupdater>
+                <class>Scriptkid_Priceupdater_Model</class>
+            </priceupdater>
+        </models>
+        <helpers>
+            <priceupdater>
+                <class>Scriptkid_Priceupdater_Helper</class>
+            </priceupdater>
+        </helpers>
+    </global>
+
+    <default>
+        <priceupdater>
+            <general>
+                <run_only_once>1</run_only_once>
+                <delete_backups_after>0</delete_backups_after>
+            </general>
+        </priceupdater>
+    </default>
+    <crontab>
+        <jobs>
+            <priceupdater>
+                <schedule>
+                    <cron_expr>*/60 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>priceupdater/observer::cronjobTrigger</model>
+                </run>
+            </priceupdater>
+        </jobs>
+    </crontab>
+</config>
