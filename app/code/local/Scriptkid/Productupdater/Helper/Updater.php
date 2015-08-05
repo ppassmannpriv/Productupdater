@@ -1,6 +1,6 @@
 <?php
 
-class Scriptkid_Priceupdater_Helper_Updater extends Mage_Core_Helper_Abstract {
+class Scriptkid_Productupdater_Helper_Updater extends Mage_Core_Helper_Abstract {
 
     public function updateData()
     {

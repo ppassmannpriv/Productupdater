@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <Scriptkid_Priceupdater>
+        <Scriptkid_Productupdater>
             <version>0.4.2</version>
-        </Scriptkid_Priceupdater>
+        </Scriptkid_Productupdater>
     </modules>
 
     <global>
+      <helpers>
+          <productupdater>
+              <class>Scriptkid_Productupdater_Helper</class>
+          </productupdater>
+      </helpers>
         <models>
-            <priceupdater>
-                <class>Scriptkid_Priceupdater_Model</class>
-            </priceupdater>
+            <productupdater>
+                <class>Scriptkid_Productupdater_Model</class>
+            </productupdater>
         </models>
-        <helpers>
-            <priceupdater>
-                <class>Scriptkid_Priceupdater_Helper</class>
-            </priceupdater>
-        </helpers>
     </global>
 
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <productupdater after="Mage_Adminhtml">Scriptkid_Productupdater_Adminhtml</productupdater>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <default>
-        <priceupdater>
+        <productupdater>
             <general>
                 <run_only_once>1</run_only_once>
                 <delete_backups_after>0</delete_backups_after>
             </general>
-        </priceupdater>
+        </productupdater>
     </default>
     <crontab>
         <jobs>
-            <priceupdater>
+            <productupdater>
                 <schedule>
                     <cron_expr>*/60 * * * *</cron_expr>
                 </schedule>
                 <run>
-                    <model>priceupdater/observer::cronjobTrigger</model>
+                    <model>productupdater/observer::cronjobTrigger</model>
                 </run>
-            </priceupdater>
+            </productupdater>
         </jobs>
     </crontab>
 </config>

@@ -1,6 +1,6 @@
 <?php
 
-class Scriptkid_Priceupdater_Helper_Data extends Mage_Core_Helper_Abstract {
+class Scriptkid_Productupdater_Helper_Notification extends Mage_Core_Helper_Abstract {
 
     /*
      * This is going to be the bees knees - well somewhat at least.

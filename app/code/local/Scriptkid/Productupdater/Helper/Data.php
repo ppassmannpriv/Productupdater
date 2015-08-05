@@ -1,6 +1,6 @@
 <?php
 
-class Scriptkid_Priceupdater_Helper_Data extends Mage_Core_Helper_Abstract {
+class Scriptkid_Productupdater_Helper_Data extends Mage_Core_Helper_Abstract {
 
     private $files = false;
     private $xml = false;
@@ -8,13 +8,13 @@ class Scriptkid_Priceupdater_Helper_Data extends Mage_Core_Helper_Abstract {
     private $updater = false;
     private $notifaction = false;
 
-    private function __construct()
+    public function __construct()
     {
         $this->files = Mage::helper('productupdater/files');
         $this->xml = Mage::helper('productupdater/xml');
         $this->csv = Mage::helper('productupdater/csv');
         $this->updater = Mage::helper('productupdater/updater');
-        $this->notifaction = Mage::helper('productupdater/notication');
+        $this->notifaction = Mage::helper('productupdater/notification');
     }
 
     public function runUpdates()

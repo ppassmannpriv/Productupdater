@@ -1,20 +1,20 @@
 <?php
 
-class Scriptkid_Priceupdater_Helper_Files extends Mage_Core_Helper_Abstract
+class Scriptkid_Productupdater_Helper_Files extends Mage_Core_Helper_Abstract
 {
     private $workingDir = false;
     private $fileSystem = false;
 
-    private function __construct()
+    public function __construct()
     {
         $workingDir = '';
     }
 
-    public funcion newFiles()
+    public function newFiles()
     {
         $this->fileSystem = new \FilesystemIterator($this->workingDir);
-        $return = !($this->fileSystem)->valid();
-        //$return = false;
+        //$return = !($this->fileSystem)->valid();
+        $return = false;
 
         return $return;
     }

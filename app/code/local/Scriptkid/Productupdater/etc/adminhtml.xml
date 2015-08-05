@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
+    <menu>
+        <scriptkid translate="title" module="productupdater">
+            <title>Scriptkid</title>
+            <sort_order>1</sort_order>
+            <children>
+              <productupdater>
+                  <title>Productupdater</title>
+                  <sort_order>1</sort_order>
+                  <action>adminhtml/productupdater/index</action>
+              </productupdater>
+            </children>
+        </scriptkid>
+    </menu>
     <acl>
         <resources>
             <admin>
                 <children>
-                    <system>
+                    <scriptkid translate="title" module="productupdater">
+                        <title>Top Level Scriptkid Menu</title>
+                        <sort_order>1</sort_order>
+                        <children>
+                            <productupdater>
+                                <title>Productupdater Menu Item</title>
+                            </productupdater>
+                        </children>
+                    </scriptkid>
+
+                    <!--<system>
                         <children>
                             <config>
                                 <children>
-                                    <productupdater translate="title" module="productupdater">
+                                    <productupdater translate="title" module="Scriptkid_Productupdater">
                                         <title>Productupdater</title>
                                     </productupdater>
                                 </children>
                             </config>
                         </children>
-                    </system>
+                    </system>-->
                 </children>
             </admin>
         </resources>

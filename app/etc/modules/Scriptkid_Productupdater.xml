@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <Scriptkid_Priceupdater>
+    <Scriptkid_Productupdater>
       <active>true</active>
       <codePool>local</codePool>
-    </Scriptkid_Priceupdater>
+    </Scriptkid_Productupdater>
   </modules>
 </config>

@@ -12,7 +12,7 @@
 class Scriptkid_Productupdater_Model_Observer
 {
 
-    public function cronjogTrigger($observer)
+    public function cronjobTrigger($observer)
     {
         return Mage::helper('productupdater')->runUpdates();
     }
