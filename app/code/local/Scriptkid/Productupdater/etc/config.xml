@@ -17,6 +17,11 @@
                 <class>Scriptkid_Productupdater_Model</class>
             </productupdater>
         </models>
+        <blocks>
+          <productupdater>
+              <class>Scriptkid_Productupdater_Block</class>
+          </productupdater>
+        </blocks>
     </global>
 
     <admin>

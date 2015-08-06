@@ -4,7 +4,17 @@
     </default>
     <adminhtml_productupdater_index>
         <reference name="content">
-            <block type="productupdater/adminhtml_overview" name="productupdater_overview" />
+            <block name="productupdater_overview" template="scriptkid-productupdater/overview.phtml" type="productupdater/adminhtml_overview" />
         </reference>
     </adminhtml_productupdater_index>
 </layout>
+<!--
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <modulename_adminhtml_modulenamebackend_index>
+	<reference name="content">
+	  <block type="modulename/adminhtml_modulenamebackend" name="modulenamebackend" template="modulename/modulenamebackend.phtml"/>
+	</reference>
+  </modulename_adminhtml_modulenamebackend_index>
+</layout>
+-->
