@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
+    <tabs>
+        <scriptkid translate="label" module="productupdater">
+            <label>Scriptkid</label>
+            <sort_order>100</sort_order>
+        </scriptkid>
+    </tabs>
     <sections>
         <productupdater translate="label" module="productupdater">
-            <label>Product Updates</label>
+            <label>Productupdater</label>
             <tab>scriptkid</tab>
-            <sort_order>2000</sort_order>
+            <sort_order>1000</sort_order>
             <show_in_default>1</show_in_default>
             <show_in_website>0</show_in_website>
             <show_in_store>0</show_in_store>
             <groups>
                 <settings translate="label">
                     <label>Settings</label>
+                    <frontend_type>text</frontend_type>
                     <sort_order>30</sort_order>
                     <show_in_default>1</show_in_default>
                     <show_in_website>0</show_in_website>

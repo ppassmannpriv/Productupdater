@@ -19,11 +19,11 @@ class Scriptkid_Productupdater_Helper_Data extends Mage_Core_Helper_Abstract {
 
     public function runUpdates()
     {
-        if($files->newFiles())
-        {
-            //run an update?
-        }
 
+        #if($files->newFiles())
+        #{
+            //run an update?
+        #}
         $msg = 'This actually works! A bit...';
         return $msg;
     }

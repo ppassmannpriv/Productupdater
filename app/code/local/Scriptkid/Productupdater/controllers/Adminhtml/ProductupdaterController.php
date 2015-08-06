@@ -10,4 +10,10 @@ class Scriptkid_Productupdater_Adminhtml_ProductupdaterController extends Mage_A
 
     }
 
+    public function manualAction()
+    {
+      Mage::helper('productupdater')->runUpdates();
+      $this->_redirect('adminhtml/productupdater/index');
+    }
+
 }

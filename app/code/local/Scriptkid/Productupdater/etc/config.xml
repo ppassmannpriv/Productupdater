@@ -43,6 +43,23 @@
                 </productupdater>
             </updates>
         </layout>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <scriptkid_productupdater>
+                                        <title>Productupdater Settings</title>
+                                    </scriptkid_productupdater>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
     </adminhtml>
 
     <default>

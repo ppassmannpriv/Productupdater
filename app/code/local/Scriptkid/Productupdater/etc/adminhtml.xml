@@ -26,18 +26,17 @@
                             </productupdater>
                         </children>
                     </scriptkid>
-
-                    <!--<system>
+                    <system>
                         <children>
                             <config>
                                 <children>
-                                    <productupdater translate="title" module="Scriptkid_Productupdater">
+                                    <productupdater translate="title" module="productupdater">
                                         <title>Productupdater</title>
                                     </productupdater>
                                 </children>
                             </config>
                         </children>
-                    </system>-->
+                    </system>
                 </children>
             </admin>
         </resources>
