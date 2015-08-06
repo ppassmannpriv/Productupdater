@@ -1,0 +1,13 @@
+{
+  "authors": [
+    {
+      "name": "Pieter Paßmann",
+      "email": "pieter.passmann@gmail.com",
+      "homepage": "http://www.scriptkid.de",
+      "role": "Developer"
+    }
+    ],
+    "require": {
+      "parsecsv/php-parsecsv": "0.4.5"
+    }
+}
