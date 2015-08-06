@@ -30,6 +30,15 @@
             </adminhtml>
         </routers>
     </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <productupdater>
+                    <file>scriptkid/productupdater.xml</file>
+                </productupdater>
+            </updates>
+        </layout>
+    </adminhtml>
 
     <default>
         <productupdater>

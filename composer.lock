@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f74b122dbf03062c819ceeef37e01ebd",
+    "hash": "bead6683b3d16e8902f2afbf201e31bc",
     "packages": [
         {
             "name": "parsecsv/php-parsecsv",

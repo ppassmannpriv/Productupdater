@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+    </default>
+    <adminhtml_productupdater_index>
+        <reference name="content">
+            <block type="productupdater/adminhtml_overview" name="productupdater_overview" />
+        </reference>
+    </adminhtml_productupdater_index>
+</layout>

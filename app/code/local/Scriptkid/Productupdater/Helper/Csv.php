@@ -3,13 +3,13 @@
 class Scriptkid_Productupdater_Helper_Csv extends Mage_Core_Helper_Abstract {
 
     /* get that one really good CSV Interpreter from github
-    *  and never credit it ...
+    *  and never credit it ... ok... so credit it atleas somewhere. parsecsv is great!
     */
     private $csv = false;
 
     public function __construct()
     {
-      require_once Mage::getBaseDir().DS.'vendor/parsecsv/php-parsecsv/parsecsv.lib.php';
+      require_once Mage::getBaseDir('lib').DS.'Composer_repos/parsecsv/php-parsecsv/parsecsv.lib.php';
       $this->csv = new parseCSV();
     }
 
