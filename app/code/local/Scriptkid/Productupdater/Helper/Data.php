@@ -6,7 +6,7 @@ class Scriptkid_Productupdater_Helper_Data extends Mage_Core_Helper_Abstract {
     private $xml = false;
     private $csv = false;
     private $updater = false;
-    private $notifaction = false;
+    private $notification = false;
 
     public function __construct()
     {
@@ -14,7 +14,7 @@ class Scriptkid_Productupdater_Helper_Data extends Mage_Core_Helper_Abstract {
         $this->xml = Mage::helper('productupdater/xml');
         $this->csv = Mage::helper('productupdater/csv');
         $this->updater = Mage::helper('productupdater/updater');
-        $this->notifaction = Mage::helper('productupdater/notification');
+        $this->notification = Mage::helper('productupdater/notification');
     }
 
     public function runUpdates()

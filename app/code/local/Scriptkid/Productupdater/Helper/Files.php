@@ -4,10 +4,12 @@ class Scriptkid_Productupdater_Helper_Files extends Mage_Core_Helper_Abstract
 {
     private $workingDir = false;
     private $fileSystem = false;
+    private $fileExtension = false;
 
     public function __construct()
     {
-        $workingDir = '';
+        $this->workingDir = Mage::getStoreConfig('productupdater/settings/path');
+        $this->fileExtension = Mage::getStoreConfig('productupdater/settings/ext');
     }
 
     public function newFiles()
